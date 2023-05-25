@@ -1,1 +1,32 @@
-<p>home works!</p>
+<section class="home">
+    <div class="home-content">
+        <h1>Hi, I'm Francisco Ortega</h1>
+        <h3 class="typewriter">Full Stack Developer</h3>
+        <p>As a full-stack developer, I have expertise in both front-end and back-end development, enabling me to
+            create smooth
+            and functional user experiences. With a holistic approach and exceptional problem-solving skills, my aim is
+            to drive
+            project success to new heights.</p>
+        <div class="btn-box">
+            <a href="/assets/images/CV.pdf" download target="_blank">Hire Me</a>
+            <a [routerLink]="['/contact']">Let's Talk</a>
+        </div>
+    </div>
+
+    <div class="perfil">
+        <div class="perfil-image">
+            <img src="/assets/images/perfil2.png" alt="Perfil">
+        </div>
+        <div class="perfil-image2" *ngIf="updateImageVisibility">
+            <img src="/assets/images/perfil4.png" alt="Perfil">
+        </div>
+    </div>
+
+    <div class="social">
+        <a href="https://www.linkedin.com/in/francisco-ortega-iglesias/" target="_blank"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/FranOrteg" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+
+</section>
