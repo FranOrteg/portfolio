@@ -1,1 +1,18 @@
-<p>project-view works!</p>
+<section class="carousel">
+    <div class="carousel-container">
+        <ngb-carousel *ngIf="images">
+            <ng-template ngbSlide class="template" *ngFor="let image of images">
+                <div class="picsum-img-wrapper">
+                    <img [src]="image" alt="Random first slide" />
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</section>
+<section class="info">
+    <div class="info-container">
+        <h2>{{projects?.title}}</h2>
+        <a href={{projects?.url}} target="_blank"><i class="fa-solid fa-link"></i></a>
+        <p [innerHTML]="projects?.text"></p>
+    </div>
+</section>
