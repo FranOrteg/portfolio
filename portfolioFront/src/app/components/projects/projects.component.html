@@ -1,1 +1,16 @@
-<p>projects works!</p>
+<section class="projects" id="projects">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="projects-container">
+
+        <div class="projects-box" [routerLink]="['/projects', project.id]" *ngFor="let project of arrProjects">
+            <img [src]='project.image'>
+
+            <div class="projects-layer">
+                <h4>{{project.title}}</h4>
+                <p>{{project.textResume}}</p>
+                <a href={{project.url}} target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,138 @@
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 0 10%;
+    position: relative;
+}
+
+.projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 3s ease forwards;
+    animation-delay: 0.5s;
+    z-index: 2;
+}
+
+.projects h2 {
+    margin-bottom: 4rem;
+}
+
+.projects .projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 4vh;
+}
+
+.projects-container .projects-box {
+    position: relative;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.projects-box img {
+    width: 100%;
+    transition: .5s ease;
+    filter: grayscale(0.80)
+}
+
+.projects-box:hover img {
+    transform: scale(1.1);
+}
+
+.projects-box .projects-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), #00abf0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4vh;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.projects-box:hover .projects-layer {
+    opacity: 1;
+}
+
+.projects-layer h4 {
+    font-size: 5vh;
+}
+
+.projects-layer p {
+    font-size: 2.2vh;
+    margin: .3vh 0 1vh;
+}
+
+.projects-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vh;
+    height: 5vh;
+    background: #081b29;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.projects-layer a i {
+    font-size: 2vh;
+
+}
+
+.heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+span {
+    color: #00abf0;
+}
+
+
+
+@media (max-width: 700px) {
+    .projects {
+        margin-top: 270px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .projects .projects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 4vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects .projects-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 4vh;
+    }
+}
