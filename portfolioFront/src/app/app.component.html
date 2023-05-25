@@ -1,1 +1,20 @@
-<router-outlet></router-outlet>
+<body id="top">
+
+    <header class="header">
+
+        <a href="#" class="logo">Fran.</a>
+
+        <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+
+        <nav class="navbar">
+            <a [routerLink]="['/home']" routerLinkActive="active">Home</a>
+            <a [routerLink]="['/about']" routerLinkActive="active">About</a>
+            <a [routerLink]="['/projects']" routerLinkActive="active">Projects</a>
+            <a [routerLink]="['/contact']" routerLinkActive="active">Contact</a>
+        </nav>
+
+    </header>
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+</body>
