@@ -8,6 +8,9 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectViewComponent } from './components/project-view/project-view.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgbCarouselModule, NgbModule, NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,12 @@ import { ProjectViewComponent } from './components/project-view/project-view.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    NgbModule,
+    NgbToastModule,
+    NgbCarouselModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
