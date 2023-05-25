@@ -3,6 +3,6 @@ const app = express();
 
 let send = require('../controllers/mailController');
 
-app.post('/envio', send.sendMail);
+app.post('/send', send.sendMail);
 
 module.exports = app;

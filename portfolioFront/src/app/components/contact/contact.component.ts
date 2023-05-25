@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import {HttpClient} from '@angular/common/http';
+import {Component} from '@angular/core';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -42,7 +42,9 @@ export class ContactComponent {
   onSubmit() {
     if (!this.form.valid) {
       this.showError = true;
-      setTimeout(() => { this.showError = false }, 8000);
+      setTimeout(() => {
+        this.showError = false
+      }, 8000);
       console.log('hola', this.form.valid)
     } else {
       let params = {
@@ -53,9 +55,11 @@ export class ContactComponent {
         message: this.form.value.message
       }
       console.log(params)
-      this.httpClient.post('http://localhost:3000/envio', params).subscribe(res => {
-        console.log(res)
-      })
+      this.httpClient
+        .post('https://fran-portfolio-backend.onrender.com/send', params)
+        .subscribe(res => {
+          console.log(res)
+        })
       this.show = true
       this.form.reset()
     }
