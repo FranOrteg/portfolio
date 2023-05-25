@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Skills } from 'src/app/interfaces/skills';
+import { SkillService } from 'src/app/services/skill.service';
 
 @Component({
   selector: 'app-about',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+  skills: Skills[]
+
+  constructor(private skillService: SkillService) {
+    this.skills = []
+  }
+
+  ngOnInit() {
+    this.skills = this.skillService.getAll()
+  }
 }
