@@ -1,1 +1,60 @@
-<p>contact works!</p>
+<div class="container">
+    <div class="form">
+        <h4 class="heading">Contact <span>Me!</span></h4>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <input type="text" class="form-control" id="form-area" placeholder="Full Name"
+                        formControlName="name">
+
+                    <p class="error" *ngIf="checkError('name', 'required')">Name is required</p>
+                </div>
+                <div class="mb-3 col-6">
+                    <input type="text" class="form-control" id="form-area" placeholder="Email" formControlName="email">
+
+                    <p class="error" *ngIf="checkError('email', 'required')">Email is required</p>
+                    <p class="error" *ngIf="checkError('email', 'pattern')">Email has an incorrect format</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <input type="text" class="form-control" id="form-area" placeholder="Mobile Number"
+                        formControlName="mobile">
+
+                    <p class="error" *ngIf="checkError('mobile', 'required')">Mobile Number is required</p>
+                </div>
+                <div class="mb-3 col-6">
+                    <input type="text" class="form-control" id="form-area" placeholder="Email Subject"
+                        formControlName="subject">
+
+                    <p class="error" *ngIf="checkError('subject', 'required')">Email Subject is required</p>
+                </div>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" placeholder="Your Message" cols="30" rows="10"
+                    formControlName="message"></textarea>
+
+                <p class="error" *ngIf="checkError('message', 'required')">Your Message is required</p>
+            </div>
+
+            <div class="btn-box">
+                <button class="btn btn-info">Send Message</button>
+            </div>
+
+            <div>
+                <ngb-toast class="toast" *ngIf="show" header="Thank's  for Contact" [autohide]="false"
+                    (hidden)="show=false">
+                    I'll answer as soon as possible.
+                </ngb-toast>
+            </div>
+
+            <div>
+                <ngb-toast class="toast" *ngIf="showError" header="Not contact yet" [autohide]="false"
+                    (hidden)="show=false">
+                    All fields are required.
+                </ngb-toast>
+            </div>
+
+        </form>
+    </div>
+</div>

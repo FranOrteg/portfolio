@@ -1,0 +1,115 @@
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 350px;
+    position: relative;
+}
+
+.heading {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+span {
+    color: #00abf0;
+}
+
+.form-control {
+    background-color: #081b29;
+    border: 2px solid #00abf0;
+    color: white;
+}
+
+.form p {
+    color: #00abf0;
+}
+
+#form-area {
+    height: 40px;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.5s;
+    z-index: 2;
+}
+
+.btn-box button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    height: 60px;
+}
+
+.btn-box button:hover {
+    color: #00abf0;
+}
+
+.btn-box button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box button:hover::before {
+    width: 100%;
+}
+
+.toast {
+    background: #00abf0;
+    color: black;
+    margin: 0 auto;
+    width: 250px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .form {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 250px;
+        margin-bottom: 350px;
+        position: relative;
+    }
+
+    .btn-box button {
+
+        width: 100px;
+        font-size: 12px;
+        height: 35px;
+    }
+}
