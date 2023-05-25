@@ -11,6 +11,7 @@ import { ProjectViewComponent } from './components/project-view/project-view.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbCarouselModule, NgbModule, NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
     NgbCarouselModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
