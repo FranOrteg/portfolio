@@ -1,9 +1,20 @@
+body {
+    overflow-y: auto;
+}
+
 .home {
     display: flex;
     align-items: center;
     height: 100vh;
     padding: 0 10%;
     justify-content: space-between;
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
 }
 
 .home-content {
@@ -13,7 +24,7 @@
 
 .home-content h1 {
     position: relative;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -27,7 +38,7 @@
     height: 110%;
     background: #081b29;
     animation: showRight 2s ease forwards;
-    animation-delay: 0;
+    animation-delay: 0.5s;
 }
 
 
@@ -157,10 +168,10 @@
 
 .social {
     position: absolute;
-    bottom: 40px;
-    width: 190px;
+    width: 130px;
     display: flex;
     justify-content: space-between;
+    padding-top: 600px;
 }
 
 .social::before {
@@ -173,7 +184,7 @@
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: 1.9s;
-    z-index: 2;
+    z-index: -1;
 }
 
 .social a {
@@ -189,7 +200,7 @@
     font-size: 24px;
     color: #00abf0;
     text-decoration: none;
-    z-index: 1;
+    z-index: 0;
     overflow: hidden;
     transition: .5s;
 }
@@ -295,7 +306,7 @@
 }
 
 /* Medias */
-@media (max-width: 700px) {
+@media (max-width: 930px) {
     .home {
         flex-direction: column;
     }
@@ -310,8 +321,16 @@
         margin-top: 150px;
     }
 
+    .content-box {
+        display: block;
+        padding: 10px 10%;
+    }
+
     .social {
         position: relative;
+        padding-top: 0;
+        margin: 0 auto;
+        padding-bottom: 30px;
     }
 
     .perfil-image img {
@@ -322,5 +341,11 @@
         display: block;
         max-width: 100%;
         height: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .content-box {
+        padding: 0 10%;
     }
 }

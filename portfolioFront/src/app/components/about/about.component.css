@@ -301,9 +301,13 @@ span {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
     .container {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about {
+        margin-top: 220px;
     }
 }
 
