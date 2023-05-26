@@ -75,11 +75,11 @@
 }
 
 .projects-layer h4 {
-    font-size: 5vh;
+    font-size: 2rem;
 }
 
 .projects-layer p {
-    font-size: 2.2vh;
+    font-size: 0.9rem;
     margin: .3vh 0 1vh;
 }
 
@@ -87,8 +87,8 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5vh;
-    height: 5vh;
+    width: 4vh;
+    height: 4vh;
     background: #081b29;
     color: white;
     border-radius: 50%;
@@ -96,7 +96,7 @@
 }
 
 .projects-layer a i {
-    font-size: 2vh;
+    font-size: 1rem;
 
 }
 
