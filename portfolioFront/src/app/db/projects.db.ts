@@ -38,12 +38,12 @@ export const PROJECTS: Projects[] = [
         id: 4
     },
     {
-        title: 'CRM',
-        textResume: 'The development of a Customer Management system for a hospital',
-        text: 'The development of a CRM system for a hospital involves utilizing various technologies to streamline patient management, enhance communication, and improve overall operational efficiency. This CRM system is designed to centralize patient information, automate administrative tasks, and facilitate effective communication among healthcare professionals.',
-        image: '/assets/images/crmHospital.png',
-        images: ['crmHospital'],
-        url: '',
+        title: 'POKEDEX',
+        textResume: 'The development of a Pokemon combat videogame in Angular',
+        text: 'The Pokédex application created using Angular is an exciting tool that combines the love for Pokémon with the thrill of battles. With its intuitive and visually appealing interface, this application allows trainers to explore and learn about a wide variety of Pokémon, as well as train them and put them to the test in exhilarating combat.<br><br>The Pokédex application in Angular offers an extensive Pokémon database, providing detailed information about each species, including their abilities, statistics, evolution, and signature moves. Users can explore different generations of Pokémon, discover new species, and learn about their strengths and weaknesses.<br><br>But the most exciting feature of this application is the ability to engage in real-time Pokémon battles. Users can challenge other trainers, either online or in local mode, and put their strategic skills to the test. Battles are filled with excitement and action as players select moves, anticipate their opponents tactics, and fight for victory.<br><br>To develop this application, the backend was built using Node.js and Express, while the frontend was created using Angular.The MySQL database serves as the foundation for storing and retrieving Pokémon information, as well as user data and battle records.',
+        image: '/assets/images/Pokemon.png',
+        images: ['Pokemon'],
+        url: 'https://github.com/FranOrteg/Pokemon.git',
         id: 5
     },
     {
