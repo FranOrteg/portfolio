@@ -47,12 +47,12 @@ export const PROJECTS: Projects[] = [
         id: 5
     },
     {
-        title: 'Portfolio',
-        textResume: 'Portfolio developed with Angular and Node.js',
-        text: "customized website portfolio developed with Angular and Node.js. This single-page application (SPA) is designed to showcase an individual's skills, projects, and achievements in an engaging and professional manner.<br><br>Portfolio interface is intuitive and easy to navigate, featuring a modern and sleek design that visually highlights the content. With interactive features and subtle animations, the portfolio provides an immersive user experience.<br><br>Using Angular, different sections are built, including a striking homepage, a featured projects section, an image gallery, and a contact page. These sections are developed in a modular fashion and can be customized based on the user's needs and preferences<br><br>The back-end of the portfolio is implemented using Node.js, enabling efficient data management and interaction with a database or other external services, if needed. Additionally, a functional contact form can be added using Node.js to capture and send messages from visitors.",
-        image: '/assets/images/portfolio.png',
-        images: ['portfolio', 'portfolio1'],
-        url: '',
+        title: 'Spotify Clone',
+        textResume: 'Spotify Clone with Node.js, Express, and Spotify API',
+        text: "Welcome to the incredible adventure of musical programming! If you've ever wondered how programmers manage to access Spotify's infinite source of rhythms and melodies, you've come to the right place. Get ready to tune your ears and flex your fingers, because today I'll show you how to connect to the Spotify API using Express. And we'll do it in such a fun way that even the most rigid programmers will be shaking their skeletons!<br><br>Imagine stepping into the music control room like a virtual DJ, playing with millions of songs at the reach of your code.You'll be the master of rhythm, the architect of melody, and the creator of the most epic playlists. What if your code becomes a famous DJ? You could be the next Martin Garrix of the programming world!",
+        image: '/assets/images/spotify.png',
+        images: ['spotyCode'],
+        url: 'https://github.com/FranOrteg/SpotifyApi-Express.js.git',
         id: 6
     },
 ]
