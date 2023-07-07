@@ -50,7 +50,7 @@ export const PROJECTS: Projects[] = [
         title: 'Spotify Clone',
         textResume: 'Spotify Clone with Node.js, Express, and Spotify API',
         text: "Welcome to the incredible adventure of musical programming! If you've ever wondered how programmers manage to access Spotify's infinite source of rhythms and melodies, you've come to the right place. Get ready to tune your ears and flex your fingers, because today I'll show you how to connect to the Spotify API using Express. And we'll do it in such a fun way that even the most rigid programmers will be shaking their skeletons!<br><br>Imagine stepping into the music control room like a virtual DJ, playing with millions of songs at the reach of your code.You'll be the master of rhythm, the architect of melody, and the creator of the most epic playlists. What if your code becomes a famous DJ? You could be the next Martin Garrix of the programming world!",
-        image: '/assets/images/spotify.png',
+        image: '/assets/images/spoty.png',
         images: ['spotyCode'],
         url: 'https://github.com/FranOrteg/SpotifyApi-Express.js.git',
         id: 6
